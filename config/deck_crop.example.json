@@ -1,0 +1,17 @@
+{
+  "slots": {
+    "2": {
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 0.8
+    },
+    "3": {
+      "x": 0,
+      "y": 0.8,
+      "w": 1,
+      "h": 0.2
+    }
+  },
+  "description": "Example only: replace regions using the actual camera image, with plate A1 at top-left."
+}

@@ -1,0 +1,43 @@
+prompt: 'Autonomously characterize the HRP-TMB assay: identify its linear working range
+  and estimate Km and kcat from time-resolved measurements.'
+domain: enzyme
+deck:
+  plate_slot: 2
+  plate_type: corning_96_wellplate_360ul_flat
+  reservoir_slot: 3
+  reservoir_type: nest_12_reservoir_15ml
+  tiprack_slot: 1
+  tiprack_type: opentrons_96_tiprack_300ul
+  pipette_type: p300_single
+  pipette_mount: right
+  secondary_tiprack_slot: 4
+  secondary_tiprack_type: opentrons_96_tiprack_20ul
+  secondary_pipette_type: p20_single
+  secondary_pipette_mount: left
+camera:
+  crop_config: ../config/deck_crop.json
+  focus: 50
+  exposure: -1
+  white_balance: 4500
+plate_wells: A1-H12
+reagents:
+  A1:
+    label: Enzyme working stock (HRP), 0.003 uM
+    volume_ul: 2000.0
+    concentration_value: 0.003
+    concentration_unit: uM
+    concentration_status: declared nominal
+    molecular_weight_kDa: 44.0
+    concentration_basis: Nominal enzyme molarity from the stock label
+  A2:
+    label: Chromogenic substrate stock (TMB), 5.0 mM
+    volume_ul: 5000.0
+    concentration_value: 5.0
+    concentration_unit: mM
+    concentration_status: declared nominal
+  A3:
+    label: Assay buffer (PBS)
+    volume_ul: 15000.0
+    concentration_value: 1.0
+    concentration_unit: x
+    concentration_status: declared nominal

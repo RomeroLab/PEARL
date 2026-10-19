@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pearl"
+version = "0.0.0"
+description = "Perception-enabled autonomous laboratory experiments with five collaborating agents"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+dependencies = ["numpy>=1.26", "scipy>=1.11", "opencv-python>=4.8", "requests>=2.31", "openai>=2.16", "pydantic>=2", "PyYAML>=6", "jsonschema>=4.17", "python-dotenv>=1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --tb=short"
